@@ -1,26 +1,91 @@
- "use strict"; // treat all js code as newer version
+const data = [
+  {
+    id: 1,
+    name: "Mayur",
+    surname: "Shah",
+    gender: "Male",
+    physics: 30,
+    maths: 99,
+    english: 20,
+  },
+  {
+    id: 2,
+    name: "Rajesh",
+    surname: "Donga",
+    gender: "Male",
+    physics: 50,
+    maths: 30,
+    english: 90,
+  },
+  {
+    id: 3,
+    name: "Ajay",
+    surname: "Savaliya",
+    gender: "Male",
+    physics: 60,
+    maths: 30,
+    english: 40,
+  },
+  {
+    id: 4,
+    name: "Priya",
+    surname: "Sharma",
+    gender: "Male",
+    physics: 80,
+    maths: 70,
+    english: 60,
+  },
+  {
+    id: 5,
+    name: "Tapan",
+    surname: "Patel",
+    gender: "Male",
+    physics: 52,
+    maths: 60,
+    english: 30,
+  },
+  {
+    id: 6,
+    name: "Mayur",
+    surname: "Sharma",
+    gender: "Male",
+    physics: 30,
+    maths: 99,
+    english: 20,
+  },
+];
 
- // alert(3 +3) // we are using nodejs, not a browser
 
- console.log(3
-    +
-    3) // Code readability should be high 
+let userName =  data.reduce((acc, curr) => {
+//  if(acc.curr.name; 
+// console.log(acc);  
+if(!acc.includes(curr.name)){
+    acc.push(curr.name)
+}
+return acc;
+},[]);
 
-console.log("Chandresh")    
+console.log(" --------------- 111", userName);
+// let userInfo = [];
+// let getName = data.map((users) => {
+//     if(userInfo.indexOf(users.name)){
+//         // userInfo.push(key.name)
+//         return users.name;
+//     }
+// })
 
-let name = "Chandresh"
-let age = 29
-let isLoggedIn = false
+// data.forEach((users) => {
+//   if (userInfo.indexOf(users.name)) {
+//     userInfo.push(users.name)
+//     // return users.name;
+//   }
+// });
 
-// number => 2 to power 53
-//  BigInt
-// string => ""
-//  boolean => true/false
-// null => standaloan value
-// undefined => 
-// symbol => unique
-
-//  object
-
-console.log(typeof undefined); // undefined
-console.log( typeof null ); // object
+// console.log("userInfo ---------- > ", userInfo);
+// console.log(getName);
+// let getResult = data.filter(user => {
+//     if(user.physics >= 33 && user.maths >= 33 && user.english >= 33){
+//         return user
+//     }
+// })
+// console.log(getResult);
