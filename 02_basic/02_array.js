@@ -18,8 +18,11 @@ const dc_heros = ["superman", "flash", "batman"];
 
 // console.log(newArr);
 
-let num1 = 100;
+let num1 = {name: "classic"};
 let num2 = 200;
 let num3 = 300;
 
-console.log(Array.of(num1, num2, num3));
+// const set = new Set(["foo", "bar", "baz", "foo"]);
+// Array.from(set);
+
+// console.log(set);
